@@ -35,7 +35,7 @@ tier0Config = createTier0Config()
 setConfigVersion(tier0Config, "replace with real version")
 
 # Set run number to replay
-setInjectRuns(tier0Config, [ 335508,336349,336436 ])
+setInjectRuns(tier0Config, [337240, 337234])
 
 # Settings up sites
 processingSite = "T2_CH_CERN"
@@ -90,7 +90,7 @@ setPromptCalibrationConfig(tier0Config,
 
 # Defaults for CMSSW version
 defaultCMSSWVersion = {
-       'default': "CMSSW_11_1_3"
+       'default': "CMSSW_11_1_4"
      }
 
 # Configure ScramArch
@@ -133,65 +133,67 @@ alcarawSplitting = 20000 * numberOfCores
 # Setup repack and express mappings
 #
 repackVersionOverride = {
-    "CMSSW_10_0_0" : "CMSSW_11_1_3",
-    "CMSSW_10_0_1" : "CMSSW_11_1_3",
-    "CMSSW_10_0_2" : "CMSSW_11_1_3",
-    "CMSSW_10_0_3" : "CMSSW_11_1_3",
-    "CMSSW_10_0_4" : "CMSSW_11_1_3",
-    "CMSSW_10_0_5" : "CMSSW_11_1_3",
-    "CMSSW_10_1_0" : "CMSSW_11_1_3",
-    "CMSSW_10_1_1" : "CMSSW_11_1_3",
-    "CMSSW_10_1_2" : "CMSSW_11_1_3",
-    "CMSSW_10_1_3" : "CMSSW_11_1_3",
-    "CMSSW_10_1_4" : "CMSSW_11_1_3",
-    "CMSSW_10_1_5" : "CMSSW_11_1_3",
-    "CMSSW_10_1_6" : "CMSSW_11_1_3",
-    "CMSSW_10_1_7" : "CMSSW_11_1_3",
-    "CMSSW_10_1_8" : "CMSSW_11_1_3",
-    "CMSSW_10_1_9" : "CMSSW_11_1_3",
-    "CMSSW_10_1_10" : "CMSSW_11_1_3",
-    "CMSSW_10_2_0" : "CMSSW_11_1_3",
-    "CMSSW_10_2_1" : "CMSSW_11_1_3",
-    "CMSSW_10_2_5" : "CMSSW_11_1_3",
-    "CMSSW_10_3_0" : "CMSSW_11_1_3",
-    "CMSSW_10_3_1" : "CMSSW_11_1_3",
-    "CMSSW_10_3_3" : "CMSSW_11_1_3",
-    "CMSSW_10_6_1" : "CMSSW_11_1_3",
-    "CMSSW_10_6_3" : "CMSSW_11_1_3",
-    "CMSSW_10_6_8" : "CMSSW_11_1_3",
-    "CMSSW_11_0_1" : "CMSSW_11_1_3",
-    "CMSSW_11_0_2" : "CMSSW_11_1_3"
+    "CMSSW_10_0_0" : "CMSSW_11_1_4",
+    "CMSSW_10_0_1" : "CMSSW_11_1_4",
+    "CMSSW_10_0_2" : "CMSSW_11_1_4",
+    "CMSSW_10_0_3" : "CMSSW_11_1_4",
+    "CMSSW_10_0_4" : "CMSSW_11_1_4",
+    "CMSSW_10_0_5" : "CMSSW_11_1_4",
+    "CMSSW_10_1_0" : "CMSSW_11_1_4",
+    "CMSSW_10_1_1" : "CMSSW_11_1_4",
+    "CMSSW_10_1_2" : "CMSSW_11_1_4",
+    "CMSSW_10_1_3" : "CMSSW_11_1_4",
+    "CMSSW_10_1_4" : "CMSSW_11_1_4",
+    "CMSSW_10_1_5" : "CMSSW_11_1_4",
+    "CMSSW_10_1_6" : "CMSSW_11_1_4",
+    "CMSSW_10_1_7" : "CMSSW_11_1_4",
+    "CMSSW_10_1_8" : "CMSSW_11_1_4",
+    "CMSSW_10_1_9" : "CMSSW_11_1_4",
+    "CMSSW_10_1_10" : "CMSSW_11_1_4",
+    "CMSSW_10_2_0" : "CMSSW_11_1_4",
+    "CMSSW_10_2_1" : "CMSSW_11_1_4",
+    "CMSSW_10_2_5" : "CMSSW_11_1_4",
+    "CMSSW_10_3_0" : "CMSSW_11_1_4",
+    "CMSSW_10_3_1" : "CMSSW_11_1_4",
+    "CMSSW_10_3_3" : "CMSSW_11_1_4",
+    "CMSSW_10_6_1" : "CMSSW_11_1_4",
+    "CMSSW_10_6_3" : "CMSSW_11_1_4",
+    "CMSSW_10_6_8" : "CMSSW_11_1_4",
+    "CMSSW_11_0_1" : "CMSSW_11_1_4",
+    "CMSSW_11_0_2" : "CMSSW_11_1_4",
+    "CMSSW_11_1_3" : "CMSSW_11_1_4"
     }
 
 expressVersionOverride = {
-    "CMSSW_10_0_0" : "CMSSW_11_1_3",
-    "CMSSW_10_0_1" : "CMSSW_11_1_3",
-    "CMSSW_10_0_2" : "CMSSW_11_1_3",
-    "CMSSW_10_0_3" : "CMSSW_11_1_3",
-    "CMSSW_10_0_4" : "CMSSW_11_1_3",
-    "CMSSW_10_0_5" : "CMSSW_11_1_3",
-    "CMSSW_10_1_0" : "CMSSW_11_1_3",
-    "CMSSW_10_1_1" : "CMSSW_11_1_3",
-    "CMSSW_10_1_2" : "CMSSW_11_1_3",
-    "CMSSW_10_1_3" : "CMSSW_11_1_3",
-    "CMSSW_10_1_4" : "CMSSW_11_1_3",
-    "CMSSW_10_1_5" : "CMSSW_11_1_3",
-    "CMSSW_10_1_6" : "CMSSW_11_1_3",
-    "CMSSW_10_1_7" : "CMSSW_11_1_3",
-    "CMSSW_10_1_8" : "CMSSW_11_1_3",
-    "CMSSW_10_1_9" : "CMSSW_11_1_3",
-    "CMSSW_10_1_10" : "CMSSW_11_1_3",
-    "CMSSW_10_2_0" : "CMSSW_11_1_3",
-    "CMSSW_10_2_1" : "CMSSW_11_1_3",
-    "CMSSW_10_2_5" : "CMSSW_11_1_3",
-    "CMSSW_10_3_0" : "CMSSW_11_1_3",
-    "CMSSW_10_3_1" : "CMSSW_11_1_3",
-    "CMSSW_10_3_3" : "CMSSW_11_1_3",
-    "CMSSW_10_6_1" : "CMSSW_11_1_3",
-    "CMSSW_10_6_3" : "CMSSW_11_1_3",
-    "CMSSW_10_6_8" : "CMSSW_11_1_3",
-    "CMSSW_11_0_1" : "CMSSW_11_1_3",
-    "CMSSW_11_0_2" : "CMSSW_11_1_3"
+    "CMSSW_10_0_0" : "CMSSW_11_1_4",
+    "CMSSW_10_0_1" : "CMSSW_11_1_4",
+    "CMSSW_10_0_2" : "CMSSW_11_1_4",
+    "CMSSW_10_0_3" : "CMSSW_11_1_4",
+    "CMSSW_10_0_4" : "CMSSW_11_1_4",
+    "CMSSW_10_0_5" : "CMSSW_11_1_4",
+    "CMSSW_10_1_0" : "CMSSW_11_1_4",
+    "CMSSW_10_1_1" : "CMSSW_11_1_4",
+    "CMSSW_10_1_2" : "CMSSW_11_1_4",
+    "CMSSW_10_1_3" : "CMSSW_11_1_4",
+    "CMSSW_10_1_4" : "CMSSW_11_1_4",
+    "CMSSW_10_1_5" : "CMSSW_11_1_4",
+    "CMSSW_10_1_6" : "CMSSW_11_1_4",
+    "CMSSW_10_1_7" : "CMSSW_11_1_4",
+    "CMSSW_10_1_8" : "CMSSW_11_1_4",
+    "CMSSW_10_1_9" : "CMSSW_11_1_4",
+    "CMSSW_10_1_10" : "CMSSW_11_1_4",
+    "CMSSW_10_2_0" : "CMSSW_11_1_4",
+    "CMSSW_10_2_1" : "CMSSW_11_1_4",
+    "CMSSW_10_2_5" : "CMSSW_11_1_4",
+    "CMSSW_10_3_0" : "CMSSW_11_1_4",
+    "CMSSW_10_3_1" : "CMSSW_11_1_4",
+    "CMSSW_10_3_3" : "CMSSW_11_1_4",
+    "CMSSW_10_6_1" : "CMSSW_11_1_4",
+    "CMSSW_10_6_3" : "CMSSW_11_1_4",
+    "CMSSW_10_6_8" : "CMSSW_11_1_4",
+    "CMSSW_11_0_1" : "CMSSW_11_1_4",
+    "CMSSW_11_0_2" : "CMSSW_11_1_4",
+    "CMSSW_11_1_3" : "CMSSW_11_1_4"
 
     }
 
@@ -223,7 +225,7 @@ addDataset(tier0Config, "Default",
            global_tag_connect = globalTagConnect,
 #           archival_node = "T0_CH_CERN_MSS",
 #           tape_node = "T1_US_FNAL_MSS",
-#           disk_node = "T1_US_FNAL_Disk",
+           disk_node = "T2_CH_CERN",
 #           raw_to_disk = False,
            blockCloseDelay = 1200,
            timePerEvent = 5,
@@ -261,6 +263,7 @@ addExpressConfig(tier0Config, "Express",
 
 addExpressConfig(tier0Config, "ExpressCosmics",
                  scenario = cosmicsScenario,
+                 diskNode = "T2_CH_CERN",
                  data_tiers = [ "FEVT" ],
                  write_dqm = True,
                  alca_producers = [ "SiStripPCLHistos", "SiStripCalZeroBias", "TkAlCosmics0T",
@@ -285,6 +288,7 @@ addExpressConfig(tier0Config, "ExpressCosmics",
 
 addExpressConfig(tier0Config, "HLTMonitor",
                  scenario = ppScenario,
+                 diskNode = "T2_CH_CERN",
                  data_tiers = [ "FEVTHLTALL" ],
                  write_dqm = True,
                  alca_producers = [],
@@ -326,9 +330,7 @@ addExpressConfig(tier0Config, "Calibration",
                  sizePerEvent = 1700,
                  versionOverride = expressVersionOverride,
                  dataType = "data",
-                 archivalNode = None,
-                 tapeNode = None,
-                 diskNode = None)
+                 diskNode = "T2_CH_CERN")
 
 addExpressConfig(tier0Config, "ExpressAlignment",
                  scenario = alcaTrackingOnlyScenario,
@@ -351,9 +353,7 @@ addExpressConfig(tier0Config, "ExpressAlignment",
                  timePerEvent = 4,
                  sizePerEvent = 1700,
                  versionOverride = expressVersionOverride,
-                 archivalNode = None,
-                 tapeNode = None,
-                 diskNode = None)
+                 diskNode = "T2_CH_CERN")
 
 addExpressConfig(tier0Config, "ALCALUMIPIXELSEXPRESS",
                  scenario = alcaLumiPixelsScenario,
@@ -376,9 +376,7 @@ addExpressConfig(tier0Config, "ALCALUMIPIXELSEXPRESS",
                  timePerEvent = 4,
                  sizePerEvent = 1700,
                  versionOverride = expressVersionOverride,
-                 archivalNode = None,
-                 tapeNode = None,
-                 diskNode = None)
+                 diskNode = "T2_CH_CERN")
 
 #####################
 ### HI Tests 2018 ###
@@ -1082,7 +1080,6 @@ for dataset in datasets:
     addDataset(tier0Config, dataset,
                do_reco = False,
                tape_node = None,
-               disk_node = None,
                scenario = ppScenario)
 
 # Parking PD to be PR'ed at CSCS
@@ -1376,6 +1373,7 @@ addExpressConfig(tier0Config, "ExpressPA",
                  blockCloseDelay = 1200,
                  timePerEvent = 4,
                  sizePerEvent = 1700,
+                 diskNode = "T2_CH_CERN",
                  versionOverride = expressVersionOverride)
 
 addExpressConfig(tier0Config, "HLTMonitorPA",
@@ -1398,6 +1396,7 @@ addExpressConfig(tier0Config, "HLTMonitorPA",
                  blockCloseDelay = 1200,
                  timePerEvent = 4, #I have to get some stats to set this properly
                  sizePerEvent = 1700, #I have to get some stats to set this properly
+                 diskNode = "T2_CH_CERN",
                  versionOverride = expressVersionOverride)
 
 #########################################
