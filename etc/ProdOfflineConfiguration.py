@@ -31,7 +31,7 @@ tier0Config = createTier0Config()
 setConfigVersion(tier0Config, "replace with real version")
 
 # Set the min run number:
-setInjectMinRun(tier0Config, 339920)
+setInjectMinRun(tier0Config, 339930)
 
 # Set the max run number:
 setInjectMaxRun(tier0Config, 9999999)
@@ -170,7 +170,7 @@ repackVersionOverride = {
     "CMSSW_11_1_3" : "CMSSW_11_2_3",
     "CMSSW_11_1_4" : "CMSSW_11_2_3",
     "CMSSW_11_1_5" : "CMSSW_11_2_3",
-    "CMSSW_11_2_1_patch2" : "CMSSW_11_2_3"
+    "CMSSW_11_2_1" : "CMSSW_11_2_3"
     }
 
 expressVersionOverride = {
@@ -207,7 +207,7 @@ expressVersionOverride = {
     "CMSSW_11_1_3" : "CMSSW_11_2_3",
     "CMSSW_11_1_4" : "CMSSW_11_2_3",
     "CMSSW_11_1_5" : "CMSSW_11_2_3",
-    "CMSSW_11_2_1_patch2" : "CMSSW_11_2_3"
+    "CMSSW_11_2_1" : "CMSSW_11_2_3"
     }
 
 #set default repack settings for bulk streams
