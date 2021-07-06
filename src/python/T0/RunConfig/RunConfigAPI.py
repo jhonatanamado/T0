@@ -561,7 +561,7 @@ def configureRunStream(tier0Config, run, stream, specDirectory, dqmUploadProxy):
 
             specArguments = {}
 
-            if stream == 'ScoutingPF':
+            if stream == 'ScoutingPF' or stream == 'NanoDST':
                 specArguments['Memory'] = 2000
             else:
                 specArguments['Memory'] = 1000
